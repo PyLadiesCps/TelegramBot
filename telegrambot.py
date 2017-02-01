@@ -6,20 +6,16 @@ import random
 #import config
 
 # edite aqui com seu token
-TOKEN = "<your-bot-token>"
-
+TOKEN = "305103765:AAG5YuDFCBOES4mRRqQzkzkJcqfxEr9bom4"
 
 #TOKEN = config.token
 URL = "https://api.telegram.org/bot{}/".format(TOKEN)
 
-imagens = list(range(6))
-
-imagens[0] = "http://cdn3-www.cattime.com/assets/uploads/2011/08/best-kitten-names-1.jpg"
-imagens[1] = "http://www.pets4homes.co.uk/images/articles/1646/large/kitten-emergencies-signs-to-look-out-for-537479947ec1c.jpg"
-imagens[2] = "http://dreamatico.com/data_images/kitten/kitten-1.jpg"
-imagens[3] = "https://pbs.twimg.com/profile_images/562466745340817408/_nIu8KHX.jpeg"
-imagens[4] = "http://dreamatico.com/data_images/kitten/kitten-3.jpg"
-imagens[5] = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Kitten_in_Rizal_Park,_Manila.jpg/230px-Kitten_in_Rizal_Park,_Manila.jpg"
+imagens=[ "http://cdn3-www.cattime.com/assets/uploads/2011/08/best-kitten-names-1.jpg",
+          "http://www.pets4homes.co.uk/images/articles/1646/large/kitten-emergencies-signs-to-look-out-for-537479947ec1c.jpg",
+          "http://dreamatico.com/data_images/kitten/kitten-1.jpg",  "https://pbs.twimg.com/profile_images/562466745340817408/_nIu8KHX.jpeg",
+          "http://dreamatico.com/data_images/kitten/kitten-3.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Kitten_in_Rizal_Park,_Manila.jpg/230px-Kitten_in_Rizal_Park,_Manila.jpg"]
 
 def get_url(url):
     response = requests.get(url)
